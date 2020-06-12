@@ -1,6 +1,6 @@
 # blink_leds
 
-This little script will blink the alternatingly blink the two  LEDs on the front of a Raspberry Pi.
+This little script will alternatingly blink the two  LEDs on the front of a Raspberry Pi.
 
 You will need to `ssh` into the pi that you want to blink the LEDs on.
 
