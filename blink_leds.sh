@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# based on this article: https://opensource.com/article/20/6/find-raspberry-pi
+
 set -o errexit
 set -o nounset
 
