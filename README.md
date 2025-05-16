@@ -15,6 +15,6 @@ chmod +x blink_leds.sh
 sudo ./blink_leds.sh
 ```
 
-This will print the message `Blinking Raspberry Pi's LEDs - press CTRL-C to quit` and will continue to alternate blink the red and green LEDs on the front of the raspberry pi.
+This will print the message `Blinking Raspberry Pi's LEDs for 1 minute - press CTRL-C to quit` and will continue to alternate blink the red and green LEDs on the front of the raspberry pi.
 
 Pressing CTRL-C will stop the lights from blinking and set the LED states back to what they were before.
