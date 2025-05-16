@@ -5,7 +5,7 @@
 
 # make sure that this is being run as root
 if ! [ $(id -u) = 0 ]; then
-   echo "You must be root to run this.  Try using `sudo`"
+   echo "You must be root to run this.  Try using 'sudo'"
    exit 1
 fi
 
