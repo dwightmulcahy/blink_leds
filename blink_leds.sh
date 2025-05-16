@@ -67,7 +67,7 @@ ENABLED_LED1=$(cat "${LED1_TRIGGER}" | sed -n -r 's/.*\[(.*)\].*/\1/p')
 BRIGHTNESS_LED1=$(cat "${LED1_BRIGHTNESS}")
 
 
-echo -n "Blinking Raspberry Pi's LEDs - press CTRL-C to quit"
+echo -n "Blinking Raspberry Pi's LEDs for 1 minute - press CTRL-C to quit"
 
 # turn off the triggers for the LEDs
 echo none >"${LED0_TRIGGER}"
