@@ -5,7 +5,7 @@
 
 # make sure that this is being run as root
 if ! [ $(id -u) = 0 ]; then
-   echo "Must be run as root."
+   echo "You must be root to run this.  Try using `sudo`"
    exit 1
 fi
 
@@ -51,6 +51,7 @@ fi
 if [ ! -d "$LED0" ] || [ ! -d "$LED1" ]
 then
   echo "Unable to find directories for LEDs."
+  exit 1
 fi
 
 # set up the trigger and brightness directory constants
@@ -76,7 +77,6 @@ echo none >"${LED1_TRIGGER}"
 COUNT=0
 while true
 do
-  let "COUNT=COUNT+1"
   if [[ $COUNT -lt 20 ]]
   then
     echo "${ON}" > "${LED0_BRIGHTNESS}"
@@ -92,5 +92,6 @@ do
     quit
     break
   fi
+  let "COUNT=COUNT+1"
 done
 
